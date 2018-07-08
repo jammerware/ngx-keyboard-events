@@ -11,6 +11,11 @@ npm i ngx-keyboard-events
 
 **app.module.ts**
 ```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { NgxKeyboardEventsModule } from 'ngx-keyboard-events';
+
 @NgModule({
     declarations: [
         AppComponent
@@ -25,10 +30,10 @@ export class AppModule { }
 ```
 
 **some.component.ts**
+```typescript
 import { Component, OnInit } from '@angular/core';
 import { NgxKeyboardEventsService, NgxKeyboardEvent } from 'ngx-keyboard-events';
 
-```typescript
 @Component({
     selector: 'ngx-root',
     templateUrl: './app.component.html',

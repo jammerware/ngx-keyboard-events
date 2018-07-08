@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxKeyboardEventsModule } from 'ngx-keyboard-events';
 import { AppComponent } from './app.component';
+import { NgxKeyboardEventsModule } from 'ngx-keyboard-events';
 
 @NgModule({
     declarations: [
