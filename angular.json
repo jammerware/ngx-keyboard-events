@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ngx-keyboard-events": {
+      "root": "projects/ngx-keyboard-events",
+      "sourceRoot": "projects/ngx-keyboard-events/src",
+      "projectType": "library",
+      "prefix": "NgxKe",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-keyboard-events/tsconfig.lib.json",
+            "project": "projects/ngx-keyboard-events/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-keyboard-events/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-keyboard-events/src/test.ts",
+            "tsConfig": "projects/ngx-keyboard-events/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-keyboard-events/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-keyboard-events/tsconfig.lib.json",
+              "projects/ngx-keyboard-events/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx"
