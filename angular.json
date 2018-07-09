@@ -126,7 +126,7 @@
       "root": "projects/ngx-keyboard-events",
       "sourceRoot": "projects/ngx-keyboard-events/src",
       "projectType": "library",
-      "prefix": "NgxKe",
+      "prefix": "ngx-ke",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
