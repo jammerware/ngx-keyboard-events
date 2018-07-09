@@ -84,6 +84,7 @@ export enum NgxKeyCode {
     PageDown = 34,
     Pause = 19,
     PrintScreen = 44,
+    Return = 13,
 
     // arrow keys
     LeftArrow = 37,
@@ -135,6 +136,7 @@ export class NgxKeyboardEventsService {
     constructor() {
         // can't use HostListener in a service :/
         window.addEventListener('keyup', (event) => {
+            console.log('event', event);
             this.onKeyPressed.emit(this.resolveKeyboardEvent(event));
         });
     }
