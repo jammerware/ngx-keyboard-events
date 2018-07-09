@@ -109,7 +109,6 @@ export enum NgxKeyCode {
     NumPad8 = 104,
     NumPad9 = 105,
     NumPadAdd = 117,
-
     NumPadDecimal = 110,
     NumPadDivide = 111,
     NumPadEnter = 113,
