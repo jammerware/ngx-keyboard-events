@@ -136,7 +136,6 @@ export class NgxKeyboardEventsService {
     constructor() {
         // can't use HostListener in a service :/
         window.addEventListener('keyup', (event) => {
-            console.log('event', event);
             this.onKeyPressed.emit(this.resolveKeyboardEvent(event));
         });
     }
