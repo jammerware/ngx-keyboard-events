@@ -1,6 +1,6 @@
 {
   "name": "ngx-keyboard-events",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A simple Angular (6+) module to bring keyboard events into a listenable service-driven format consistent with Angular's style.",
   "author": {
     "name": "Jammerware",
